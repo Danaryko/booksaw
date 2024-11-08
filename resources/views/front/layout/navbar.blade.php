@@ -23,7 +23,7 @@
             </div>
             <div class="col-md-6">
                 <div class="right-element">
-                    <a href="#" class="user-account for-buy"><i
+                    <a href="/admin" class="user-account for-buy {{ Request::is('/admin') ? 'menu-active' : '' }}"><i
                             class="icon icon-user"></i><span>Account</span></a>
                     <a href="#" class="cart for-buy"><i class="icon icon-clipboard"></i><span>Cart:(0
                             $)</span></a>
@@ -54,7 +54,7 @@
 
             <div class="col-md-2">
                 <div class="main-logo">
-                    <a href="index.html"><img src="images/main-logo.png" alt="logo"></a>
+                    <a href="/" class="{{ Request::is('/') ? 'menu-active' : '' }}"><img src="images/main-logo.png" alt="logo"></a>
                 </div>
 
             </div>
@@ -64,7 +64,7 @@
                 <nav id="navbar">
                     <div class="main-menu stellarnav">
                         <ul class="menu-list">
-                            <li class="menu-item active"><a href="#home">Home</a></li>
+                            <li class="menu-item active"><a href="/" class="{{ Request::is('/') ? 'menu-active' : '' }}">Home</a></li>
                             <li class="menu-item has-sub">
                                 <a href="#pages" class="nav-link">Pages</a>
 
